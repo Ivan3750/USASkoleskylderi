@@ -1,14 +1,56 @@
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    color: #fff;
+*{ 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    text-decoration: none; 
+   } 
+    
+   :focus,:active{outline: none;} 
+   a:focus,a:active{outline: none;} 
+    
+   nav,footer,header,aside{display: block;} 
+    
+   :root{ 
+    --boss: rgb(160, 160, 160); 
+    --colors: rgb(210, 198, 198); 
+    --ua-b: ;
+   }  
+    
+   input,button,textarea{font-family:inherit;} 
+    
+   input::-ms-clear{display: none;} 
+   button{cursor: pointer;} 
+   button::-moz-focus-inner {padding:0;border:0;} 
+   a, a:visited{text-decoration: none;} 
+   a:hover{text-decoration: none;} 
+   ul li{list-style: none;} 
+   img{vertical-align: top;} 
+    
+   h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
+    
+   html{ 
+    scroll-behavior: smooth; 
+   }
+
+
+body{
+    background-color: #000000;
 }
+
+
+
 .header{
+    position: relative;
     width: 100%;
-    background-color: #000000f6;
+    height: 100vh;
+    background-image: url(./img/background-main.jpg);
+    background-size: cover;
 }
 .header__nav{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 4;
     opacity: 1;
     margin: 0px auto;
     height: 75px;
@@ -16,7 +58,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
     font-size: 24px;
     font-family: 'Rubik', sans-serif;
 }
@@ -24,46 +65,77 @@
 .header__nav-body{
     display: flex;
     gap: 50px;
-
+    
 }
 .header__logo{
     
     width: 75px;
+    transition: 0.3s;
 }
-.header__nav-link:hover{
-    color: #f00;
+.header__logo:hover{
+    cursor: pointer;
+    animation: logo 1.5s linear;
+}
+@keyframes logo {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
 }
 
-.info-box{
+
+.header__nav-link{
+    width: auto;
+    color: #fff;
     position: relative;
-    background-image: url(./img/background.jpg);
-    background-size: cover;
-    height: 90vh;
+    transition: 0.3s;
+}
+.header__nav-link::before{
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f00;
+    transition: 0.3s;
+}
+.header__nav-link:hover::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #f00;}
+
+.info-box{
+    
 }
 .box-shadow{
-    top: 75px;
+    top: 0px;
     left: 0;
     z-index: 2;   
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-color: #000;
     opacity: 0.5;
 }
 
-.info-title{
+.title{
     font-size: 100px;
     font-family: 'Rubik', sans-serif;
-    border-bottom: 4px solid #ffffff;
-    border-radius: 20px;
+    /* border-bottom: 4px solid #ffffff;
+    border-radius: 20px; */
     color: #fff;
     text-align: center;
     z-index: 5;
     width: 1000px;
-    margin: 0px auto;
-    padding-top: 190px;
-    padding-bottom: 10px;
-position: relative;
+    padding-top: 500px;
+    margin-left: 500px;
+    position: relative;
 }
 
 .info-title::after{
@@ -72,30 +144,31 @@ position: relative;
 }
 
 .main {
-    border: 1px solid #000;
-/*     background: linear-gradient(180deg, rgb(201, 200, 200) 2%, rgba(255,255,255,1) 25%);
- */
-/*     background-color: antiquewhite;
- */
- background-color: #000;
+    
 }
 .intro-block {
     display: flex;
-    width: 1200px;
-    margin: 0px auto;
-    margin-top: 20px;
-    justify-content: center;
-    gap: 75px;
+    justify-content: space-between;
+    background-color: #FB7474;
+}
+.intro-block:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4D7FFF;
 }
 .intro__img-box {
     
 }
 .intro__img {
-    border-radius: 20px;
-    width: 500px;
-    box-shadow: -24px 24px 20px #6c6b6b;
+    width: 50vw;
+    margin: 0px;
 }
 .intro__text-box {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .intro__text {
     width: 375px;
@@ -107,22 +180,23 @@ position: relative;
 
 .title_intro{
     font-family: 'Cormorant Garamond', serif;
-    margin-top: 100px;
     font-size: 70px;
     text-align: center;
+    color: #fff;
+
 
 }
 
 
-.U{
-    color: rgb(168, 0, 0);
+/* .U{
+    color: rgb(255, 0, 0);
 }
 .S{
-    color: rgb(21, 0, 159);
+    color: rgb(34, 0, 255);
     
 }
 .A{
     color: rgb(255, 255, 255);
 
 }
-
+ */
