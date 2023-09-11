@@ -132,10 +132,12 @@ body{
     color: #fff;
     text-align: center;
     z-index: 5;
-    width: 1000px;
-    padding-top: 500px;
-    margin-left: 500px;
-    position: relative;
+    /* width: 1000px; */
+    /* padding-top: 500px; */
+    /* margin-left: 500px; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .info-title::after{
