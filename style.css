@@ -13,7 +13,7 @@
    :root{ 
     --boss: rgb(160, 160, 160); 
     --colors: rgb(210, 198, 198); 
-    --ua-b: ;
+    --bg-color: #2b2b2b ;
    }  
     
    input,button,textarea{font-family:inherit;} 
@@ -130,7 +130,6 @@ body{
     color: #fff;
     text-align: center;
     z-index: 5;
-
     position: absolute;
     right: 0;
     bottom: 0;
@@ -142,7 +141,7 @@ body{
 }
 
 .main {
-    
+    background-color: #2B2B2B;
 }
 
 .intro-box{
@@ -151,17 +150,18 @@ body{
 }
 .intro-block {
     height: 600px;
-    background-color: #FB7474;
-    display: flex;
+/*     background-color: #FB7474;
+ */    display: flex;
     flex-direction: column;
     padding-left: 50px;
+    background: var(--Background, #2B2B2B);
 }
 .intro-block:nth-child(2) {
     padding-right: 50px;
     display: flex;
     justify-content: center;
-    background-color: #4D7FFF;
-}
+/*     background-color: #4D7FFF;
+ */}
 .intro__img-box {
     
 }
@@ -187,10 +187,12 @@ body{
 
 .title_intro{
     padding: 20px;
-    font-family: 'Cormorant Garamond', serif;
+    padding-bottom: 50px;
     font-size: 70px;
     text-align: center;
     color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
 
 
 }
@@ -212,20 +214,55 @@ body{
 
 
  .popular-cases {
-    background-color: #FB7474;
-    padding-bottom: 50px;
+/*     background-color: #FB7474;
+ */    padding-bottom: 50px;
+ background: var(--Background, #2B2B2B);
 
 }
 .popular-cases-title {
     color: #FFF;
-text-align: center;
+/* text-align: center;
 font-family: Rubik;
 font-size: 80px;
 font-style: normal;
 font-weight: 400;
-line-height: normal;
+line-height: normal; */
 padding: 25px;
+padding-bottom: 15px;
+color: var(--White, #FFF);
+/* H3 - Work Sans */
+font-family: Work Sans;
+font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 45.6px */
+text-transform: capitalize;
+text-align: center;
+
+
 }
+
+.try{
+    color: #FFF;
+/* text-align: center;
+font-family: Rubik;
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; */
+
+color: var(--White, #FFF);
+text-align: center;
+padding-bottom: 20px;
+/* H3 - Work Sans */
+font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 45.6px */
+text-transform: capitalize;
+}
+
 .people-box {
     display: flex;
     justify-content: space-evenly;
@@ -237,11 +274,24 @@ padding: 25px;
     justify-content: center;
 }
 .class-people-img {
+    position: relative;
     width: 300px;
     height: 385px;
     border-radius: 20px;
-    box-shadow: 2px 2px 40px #000;
+    box-shadow: 2px 2px 20px #777;
+    
 }
+
+/* .box-img::before{
+    position: absolute;
+    content: "";
+    left: 2.5%;
+    bottom: 85px;
+    width: 95%;
+    height: 80%;
+    background: linear-gradient(90deg, rgb(42, 198, 255) 0%, rgb(0, 140, 255) 100%);
+    filter:blur(1.2rem)
+} */
 
 .box-img::after{
     position: absolute;
@@ -310,7 +360,7 @@ transition: 0.3s;
 color: #FFF;
 text-align: center;
 font-family: Inter;
-font-size: 25px;
+font-size: 14px;
 font-weight: 900;
 line-height: normal;
 }
@@ -330,16 +380,25 @@ line-height: normal;
 
 .people-name{
     margin-top: 25px;
-background-color: #4D7FFF; 
+background-color: #464646; 
    text-align: center;
     color: #FFF;
-text-align: center;
+/* text-align: center;
 font-family: Indie Flower;
 font-size: 35px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+border-radius: 20px; */
+color: #FFF;
 border-radius: 20px;
+/* H5 - Work Sans */
+font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 30.8px */
+text-transform: capitalize;
 height: 60px;
 display: flex;
 justify-content: center;
@@ -347,12 +406,16 @@ align-items: center;
 
 
 }
+.people-name:hover{
+    background-color: #433dff;
+}
 
 
 .facts{
     padding: 40px 0px;
     height: 100vh;
-    background-color: #0800ff;
+/*     background-color: #0800ff;
+ */    background: var(--Background, #2B2B2B);
 
 }
 .facts-box{
@@ -588,3 +651,68 @@ https://www.figma.com/file/Sb0z8nUgq9RAogKwhQu0zn/DREAM-HOUSE?type=design&node-i
 
 
 https://www.figma.com/file/SKwG2RDjz3fWi9dq74I8zo/Organick?type=design&node-id=1-430&mode=design&t=F8nwEBp6ewcMK1Fz-0*/
+
+
+
+
+
+.info-statictic {
+    padding: 80px 0px;
+
+}
+.info-statictic-title {
+    color: var(--White, #FFF);
+
+/* H3 - Work Sans */
+font-family: Work Sans;
+font-size: 38px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 45.6px */
+text-transform: capitalize;
+
+text-align: center;
+margin-bottom: 60px;
+}
+.info-statictic-box {
+    display: flex;
+    justify-content: center;
+}
+.info-statictic-img {
+    width: 500px;
+}
+.info-static-text {
+    color: var(--White, #FFF);
+
+/* Body Text- Work Sans */
+font-family: Work Sans;
+font-size: 20px;
+width: 550px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 35.2px */
+text-transform: capitalize;
+}
+
+
+
+.statictic {
+    display: flex;
+    background-image: url(/img/World_map.svg.png);
+    background-size: cover;
+    height: 100vh;
+}
+.usa-statictic {
+}
+.countries-statictic {
+}
+.country {
+}
+.circle-statictic {
+}
+.country-box {
+}
+.country-img {
+}
+.country-name {
+}
