@@ -351,7 +351,6 @@ text-transform: capitalize;
     width: 100%;
     height: 0%;
     background-color: #000000;
-    border-radius: 20px;
     transition: 0.3s;
 }
 
@@ -376,7 +375,7 @@ text-transform: capitalize;
     position: absolute;
     content: "";
     left: 0;
-    bottom: 87px;
+    bottom: 85px;
     width: 100%;
     height: 385px;
     background-color: #000;
@@ -534,6 +533,76 @@ box-shadow: 2px 2px 50px #433dff;
 }
 
 
+
+
+
+.video-block {
+    padding: 20px 0px;
+    max-width: 1200px;
+    text-align: center;
+
+}
+.video-title {
+    color: #FFF;
+font-family: Work Sans;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 25px;
+}
+.video-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.video {
+    width: 550px;
+    border-radius: 20px;
+
+}
+.video-text-box {
+    margin-top: 50px;
+}
+.video-txt {
+    color: #FFF;
+font-family: Work Sans;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 350px;
+text-align: start;
+}
+.video-button-link {
+}
+.video-button {
+    margin-top: 20px;
+    border-radius: 20px;
+background: #FF3232;
+width: 200px;
+height: 50px;
+color: #fff;
+font-family: Work Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: 0.3s;
+}
+.video-button:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
 .facts{
     padding: 40px 0px;
     height: 100vh;
@@ -587,7 +656,7 @@ text-transform: capitalize;
     z-index: 2;
     background-color: #f00;
     padding: 7px;
-    transition: 0.3s;
+    transition: 0.7s;
     box-shadow: 2px 2px 20px #f00;
     
 }
@@ -801,6 +870,7 @@ https://www.figma.com/file/SKwG2RDjz3fWi9dq74I8zo/Organick?type=design&node-id=1
 
 
 .info-statictic {
+    margin-top: 70px;
     padding: 80px 0px;
 
 }
@@ -995,9 +1065,11 @@ text-transform: capitalize;
 
 
 .solution {
+    padding: 40px 0px;
+    max-width: 1200px;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid #000;
 }
 .solution-title {
     color: #FFF;
@@ -1007,6 +1079,7 @@ font-size: 60px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+margin-bottom: 30px;
 }
 .box-solution {
     display: flex;
@@ -1015,6 +1088,7 @@ line-height: normal;
 
 }
 .solution-text {
+    padding-bottom: 15px;
 }
 .solution-txt {
     padding: 25px;
@@ -1032,16 +1106,31 @@ line-height: normal;
  border-radius: 20px;
  padding: 1px;
 }
-.solution-img:nth-child(1){
+.solution-img{
     width: 400px;
 }
-.solution-img:nth-child(2){
+.solution-img-l{
     width: 200px;
-}
-.solution-img:nth-child(3){
-    width: 200px;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 
+
+
+.solution-img2{
+    width: 520px;
+    border-radius: 20px;
+}
+.solution-img-l2{
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+
+
 .box-linia-img{
-    
+    display: flex;
+    gap: 20px;
+
 }
