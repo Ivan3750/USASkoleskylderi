@@ -19,48 +19,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="hjem">
         <div class="header__nav">
-            <img src="./img/logo.png" alt="USA" class="header__logo">
+            <a href="./index.html" class="logo-link">
+                <img src="./img/logo.png" alt="USA" class="header__logo">
+            </a>
             <nav class="header__nav-body">
-                <a href="#" class="header__nav-link">Hjem</a>
-                <a href="#" class="header__nav-link">Skoleskyderier</a>
-                <a href="#" class="header__nav-link">Facts</a>
-                <a href="#" class="header__nav-link">Om os</a>
+                <a href="#hjem" class="header__nav-link">Hjem</a>
+                <a href="#skoleskyderi" class="header__nav-link">Skoleskyderier</a>
+                <a href="#sager" class="header__nav-link">Sager</a>
+                <a href="#facts" class="header__nav-link">Fakts</a>
+                <a href="#sammenligning" class="header__nav-link">Sammenligning
+                </a>
+
             </nav>
         </div>
         <h1 class="title">Skoleskyderier i <span class="U">U</span><span class="S">S</span><span class="A">A</span></h1>
     </header>
     <div class="box-shadow"></div>
     <main class="main">
-        <div class="intro-block">
-            <h3 class="title_intro">
-                Indledning
-            </h3>
+        <div class="intro-block" id="skoleskyderi">
             <div class="intro-box">
                 
                 <div class="intro__img-box">
                     <img src="./img/indroduktion.webp" alt="" class="intro__img">
                 </div>
                 <div class="intro__text-box">
+                    <h3 class="title_intro">
+                        Indledning
+                    </h3>
                     <p class="intro__text">
                         Hvad er motivet for en teenager, der kommer i skole og skyder alle? Dette spørgsmål konfronterer os igen og igen, når endnu et blodigt angreb sker på en uddannelsesinstitution. Især i USA sker der ofte skolemassakrer, hvor unge mænd dræber deres klassekammerater og lærere. Voldelige angreb i skolerne har udløst heftig debat – bl.a om våbenlovgivningen i USA, der giver unge relativt let adgang til skydevåben.
                     </p>
                 </div>
             </div>
+            <img src="./img/icons8-submachine-gun-94.png" alt="" class="img-decoration">
         </div>
-        <div class="intro-block">
-            <h3 class="title_intro" id="t2">
-                Hvorfor sker der skoleskyderier?
-    
-            </h3>
-            <div class="intro-box">
 
+        <div class="intro-block">
+            <div class="intro-box">
+                
                 <div class="intro__text-box">
+                    <h3 class="title_intro" id="t2">
+                        Hvorfor sker der skoleskyderier?
+            
+                    </h3>
                     <p class="intro__text">
                         Dette sker sjældent, og årsagerne varierer. Men der er tre almindelige faktorer, der påvirker skytter:
     
@@ -78,35 +88,42 @@
                 </div>
             </div>
         </div>  
-        <div class="popular-cases">
+        <div class="popular-cases" id="sager">
+            <img src="./img/icons8-school-94.png" alt="" class="img-school">
             <h3 class="popular-cases-title">
                 Mest berømt sager
             </h3>
-            <p class="try">Checkout our weekly updated trending collection.</p>
+            <p class="popular-cases-subtitle">Checkout our weekly updated trending collection.</p>
             <div class="people-box">
                 <div class="box-img">
-                    <img src="/img/Cho_Seung-hui_3.jpg" alt="" class="class-people-img">
-                    <p class="class-people-txt">Virginia <br>
+                    <img src="./img/Cho_Seung-hui_3.jpg" alt="" class="class-people-img">
+                   <!--  <p class="class-people-txt">Virginia <br>
                         
                         33 dræb <br>
                         
                         17 April 2007
-                    </p>
-                    <a href="https://www.wikiwand.com/en/Parkland_high_school_shooting" class="class-people-link">
-                        <button class="class-people-button">Læs mere</button>
+                    </p> -->
+                    <p class="people-text-city">Virginia</p>
+                    <p class="people-text-number">33 dræb</p>
+                    <p class="people-text-dato">17 April 2007</p>
+                    <a href="https://www.wikiwand.com/da/Massakren_p%C3%A5_Virginia_Tech" class="class-people-link">
+                        <button class="class-people-button">læs mere</button>
                     </a>
                     <p class="people-name">Seung-Hui Cho</p>
                 </div>
                 <div class="box-img">
-                    <img src="/img/adamxlanza.jpg" alt="" class="class-people-img">
-                    <p class="class-people-txt">Connecticut <br>
+                    <img src="./img/adamxlanza.jpg" alt="" class="class-people-img">
+                  <!--   <p class="class-people-txt">Connecticut <br>
 
                         27 dræb <br>
                          
                         14 December 
                         2012
                         
-                        </p>
+                        </p> -->
+                    <p class="people-text-city">Connecticut</p>
+                    <p class="people-text-number">27 dræb</p>
+                    <p class="people-text-dato">14 December 2012</p>
                         <a href="https://www.wikiwand.com/da/Sandy_Hook-massakren" class="class-people-link">
                             <button class="class-people-button">Læs mere</button>
                         </a>
@@ -114,24 +131,29 @@
 
                 </div>
                 <div class="box-img">
-                    <img src="/img/Nikolas_Cruz.png" alt="" class="class-people-img">
-                    <p class="class-people-txt">Florida <br>
+                    <img src="./img/Nikolas_Cruz.png" alt="" class="class-people-img">
+                    <!-- <p class="class-people-txt">Florida <br>
 
                         17 dræb <br>
                         
                         14 Februar
                         2018
                         
-                        </p>
+                        </p> -->
+                        <p class="people-text-city">Florida</p>
+                        <p class="people-text-number">17 dræb</p>
+                        <p class="people-text-dato">14 Februar 2018</p>
                         <p class="people-name">Nikolas Cruz</p>
 
-                    <a href="https://www.wikiwand.com/da/Massakren_p%C3%A5_Virginia_Tech" class="class-people-link">
-                        <button class="class-people-button">læs mere</button>
+                   
+                    <a href="https://www.wikiwand.com/en/Parkland_high_school_shooting" class="class-people-link">
+                        <button class="class-people-button">Læs mere</button>
                     </a>
                 </div>
             </div>
         </div> 
-        <div class="facts">
+        <div class="facts" id="facts">
+            <h2 class="facts-title">Fakt</h2>
             <div class="facts-box">
                 <div class="main-circle">
                     <p class="circle-title">
@@ -169,38 +191,160 @@
                 <div class="circle-linia" id="l6"></div>
 
 
-                <div class="small-circle" id="s1"></div>
+                <!-- <div class="small-circle" id="s1"></div>
                 <div class="small-circle" id="s2"></div>
                 <div class="small-circle" id="s3"></div>
                 <div class="small-circle" id="s4"></div>
                 <div class="small-circle" id="s5"></div>
                 <div class="small-circle" id="s6"></div>
-                <div class="small-circle" id="s7"></div>
+                <div class="small-circle" id="s7"></div> -->
             </div>
         </div>
-        <div class="info-statictic">
+        <div class="info-statictic" id="sammenligning">
             <h3 class="info-statictic-title">
-                sammenligning
+                Sammenligning
             </h3>
             <div class="info-statictic-box">
-                <p class="info-static-text">Skoleskyderier sker i alle lande, men i USA har det allerede krydset alle grænser. Der har været 288 tilfælde i USA siden 2009, næste på listen er Mexico med kun 8 tilfælde, lidt ned du kan se hvor mange skoleskyderi der var i forskellige lande fra 2009.Det tyder på, at noget skal ændres, men USA har ikke truffet nogen radikale tiltag, såsom et våbenforbud. I USA kan du købe et våben, når du kun er 18 år, hvis du ikke har alvorlige psykiske problemer. Mange teenagere, der begik skoleskyderier, brugte deres forældres våben, som var i offentlig ejendom.</p>
+                <p class="info-static-text">Skoleskyderier sker i alle lande, men i USA har det allerede krydset alle grænser. Der har været 288 tilfælde i USA siden 2009, næste på listen er Mexico med kun 8 tilfælde. Det tyder på, at noget skal ændres, men USA har ikke truffet nogen radikale tiltag, såsom et våbenforbud. I USA kan du købe et våben, når du kun er 18 år, hvis du ikke har alvorlige psykiske problemer. Mange teenagere, der begik skoleskyderier, brugte deres forældres våben, som var i offentlig ejendom.Lidt ned du kan se hvor mange skoleskyderi der var i forskellige lande fra 2009.</p>
                 <img src="./img/clip-school-playground.png" class="info-statictic-img"></img>
             </div>
         </div>
         <div class="statictic">
             <div class="usa-statictic">
-
-            </div>
-            <div class="countries-statictic">
-                <div class="country">
-                    <div class="circle-statictic"></div>
-                    <div class="country-box">
-                        <img src="" alt="" class="country-img">
-                        <p class="country-name"></p>
+                <div class="circle-usa">
+                    <p class="number-usa">288</p>
+                    <div class="box-info-statictic">
+                        <img src="https://www.om-flag.dk/img/13/1000x1000/amerikansk-flag.jpg" alt="" class="country-img">
+                        <p class="usa-name">United States</p>
                     </div>
                 </div>
             </div>
-        </div>     
+            <div class="countries-statictic">
+                <div class="country">
+                    <div class="country-line">
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">8</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/mexico.png" alt="" class="country-img">
+                                <p class="country-name">Mexico</p>
+                            </div>
+                            
+                        </div>
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">6</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/south-africa.png" alt="" class="country-img">
+                                <p class="country-name">South Africa</p>
+                            </div>
+                            
+                        </div>
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">5</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/india.png" alt="" class="country-img">
+                                <p class="country-name">India</p>
+                            </div>
+                            
+                        </div>
+
+                       
+                    </div>
+                    <div class="country-line">
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">4</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/pakistan.png" alt="" class="country-img">
+                                <p class="country-name">Pakistan</p>
+                            </div>
+                            
+                        </div>
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">4</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/nigeria.png" alt="" class="country-img">
+                                <p class="country-name">Nigeria</p>
+                            </div>
+                            
+                        </div>
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">3</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/afghanistan.png" alt="" class="country-img">
+                                <p class="country-name">Afghanistan</p>
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                    <div class="country-line">
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">2</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/france.png" alt="" class="country-img">
+                                <p class="country-name">France</p>
+                            </div>
+                            
+                        </div>
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">2</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/canada.png" alt="" class="country-img">
+                                <p class="country-name">Canada</p>
+                            </div>
+                            
+                        </div>
+                        <div class="contry-info">
+                            <div class="circle-statictic">
+                                <p class="number-statictic">2</p>
+                            </div>
+                            <div class="box-info-statictic">
+                                <img src="./img/Flag/brazil.png" alt="" class="country-img">
+                                <p class="country-name">Brazil</p>
+                            </div>
+                            
+                        </div>
+
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="solution">
+            <div class="solution-title">Løsning</div>
+            <div class="box-solution">
+                <div class="solution-text">
+                    <p class="solution-txt">Dette er meget nemt at rette, de burde bare ændre våbenlovene. Det kan virke sådan ved første øjekast, men i USA ønsker mange, at våbenlovgivningen skærpes, men det ønsker en anden del af befolkningen samtidig ikke. 84 % af amerikanerne, at alle skal gennemgå baggrundstjek, før de køber en pistol, og 68 % foretrækker et forbud mod semi-automatiske våben. Hvis adgangen til våben vanskeliggøres, kan det ifølge amerikanske eksperter føre til et fald i antallet af masseskyderier, skriver New York Times.
+                        Ifølge ekspertgruppen ville den største effekt komme af at indføre såkaldte universelle baggrundstjek for alle våbenkøbere. I teorien ville dette forhindre mentalt ustabile mennesker og personer med tidligere domme i at få adgang til våben.
+                        </p>
+                </div>
+                <div class="solution-img-box">
+                    <img src="./img/1.jpg" alt="" class="solution-img">
+                    <div class="box-linia-img">
+
+                        <img src="./img/image 2.png" alt="" class="solution-img">
+                        <img src="./img/image 3.png" alt="" class="solution-img">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
