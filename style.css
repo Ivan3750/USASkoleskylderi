@@ -217,7 +217,6 @@ line-height: normal;
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 45.6px */
-    text-transform: capitalize;
     text-align: start;
     width: 450px;
 
@@ -285,7 +284,6 @@ font-size: 38px;
 font-style: normal;
 font-weight: 600;
 line-height: 120%; /* 45.6px */
-text-transform: capitalize;
 text-align: center;
 
 
@@ -309,7 +307,6 @@ font-size: 22px;
 font-style: normal;
 font-weight: 600;
 line-height: 120%; /* 45.6px */
-text-transform: capitalize;
 }
 
 .people-box {
@@ -519,7 +516,6 @@ font-size: 22px;
 font-style: normal;
 font-weight: 600;
 line-height: 140%; /* 30.8px */
-text-transform: capitalize;
 height: 60px;
 display: flex;
 justify-content: center;
@@ -537,7 +533,7 @@ box-shadow: 2px 2px 50px #433dff;
 
 
 .video-block {
-    padding: 20px 0px;
+    padding: 80px 0px;
     max-width: 1200px;
     text-align: center;
 
@@ -545,11 +541,12 @@ box-shadow: 2px 2px 50px #433dff;
 .video-title {
     color: #FFF;
 font-family: Work Sans;
-font-size: 50px;
+font-size: 38px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-margin-bottom: 25px;
+margin-bottom: 30px;
+
 }
 .video-box {
     display: flex;
@@ -637,8 +634,7 @@ font-size: 38px;
 font-style: normal;
 font-weight: 600;
 line-height: 120%; /* 45.6px */
-text-transform: capitalize;
-}
+ }
 
 .main-circle:hover{
     cursor: pointer;
@@ -883,8 +879,7 @@ font-size: 38px;
 font-style: normal;
 font-weight: 600;
 line-height: 120%; /* 45.6px */
-text-transform: capitalize;
-
+ 
 text-align: center;
 margin-bottom: 60px;
 }
@@ -906,8 +901,7 @@ width: 550px;
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 35.2px */
-text-transform: capitalize;
-}
+ }
 
 
 
@@ -1013,8 +1007,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: 120%; /* 45.6px */
-text-transform: capitalize;
-    text-align: center;
+     text-align: center;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -1031,8 +1024,7 @@ text-transform: capitalize;
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 45.6px */
-    text-transform: capitalize;
-        text-align: center;
+             text-align: center;
         display: flex;
         align-content: center;
         justify-content: center;
@@ -1054,8 +1046,7 @@ text-transform: capitalize;
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 45.6px */
-    text-transform: capitalize;
-    align-items: center;
+         align-items: center;
 
 
 
@@ -1191,8 +1182,7 @@ text-align: center;
     font-style: normal;
     font-weight: 600;
     line-height: 120%; /* 45.6px */
-    text-transform: capitalize;
-    text-align: center;
+         text-align: center;
     margin-top: 10px;
 }
 .block-footer {
@@ -1211,5 +1201,9 @@ text-align: center;
     font-family: Work Sans;
     font-size: 24px;
     font-style: normal;
+    transition: 0.5s;
 
+}
+.link-footer:hover{
+    text-decoration: underline;
 }
